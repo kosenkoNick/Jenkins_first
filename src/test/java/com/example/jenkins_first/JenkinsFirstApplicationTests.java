@@ -23,7 +23,7 @@ class JenkinsFirstApplicationTests {
     mock.perform(get("/"))
         .andDo(print())
         .andExpect(status().isOk())
-        .andExpect(content().string("Hello Nick       "));
+        .andExpect(content().string("Hello Nick"));
   }
 
 }
